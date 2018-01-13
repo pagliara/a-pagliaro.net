@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="section">
+  <div class="w-container">
+    <div class="w-dyn-list">
+      {% for post in site.posts %}
+        <div class="w-dyn-items w-row">
+            <div class="w-dyn-item">
+              <a class="" href='{{ post.url }}'>
+                <div class="title">
+                  {{ post.title }}
+                </div>
+              </a>
+            </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
